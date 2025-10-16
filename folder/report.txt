@@ -1,0 +1,36 @@
+System Report - Thu Oct 16 09:31:50 AM IST 2025
+-------------------------
+Disk usage:
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           1.5G  2.6M  1.5G   1% /run
+/dev/nvme0n1p2  468G  113G  332G  26% /
+tmpfs           7.5G   73M  7.4G   1% /dev/shm
+tmpfs           5.0M   12K  5.0M   1% /run/lock
+efivarfs        148K  116K   28K  81% /sys/firmware/efi/efivars
+/dev/nvme0n1p1  1.1G   39M  1.1G   4% /boot/efi
+tmpfs           1.5G  156K  1.5G   1% /run/user/1000
+
+Memory info:
+               total        used        free      shared  buff/cache   available
+Mem:            14Gi       4.4Gi       7.4Gi       123Mi       3.4Gi        10Gi
+Swap:          4.0Gi          0B       4.0Gi
+
+CPU info:
+Model name:                              AMD Ryzen 7 7840HS w/ Radeon 780M Graphics
+BIOS Model name:                         AMD Ryzen 7 7840HS w/ Radeon 780M Graphics      Unknown CPU @ 3.8GHz
+
+Top 5 memory-consuming processes:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+saksham     3168  3.7  5.0 6082144 782776 ?      Ssl  08:33   2:10 /usr/bin/gnome-shell
+saksham     5185  0.6  2.9 1514076 459240 ?      Sl   08:35   0:20 /usr/lib/libreoffice/program/soffice.bin --impress --splash-pipe=5
+saksham     4029  1.7  2.5 34404220 397304 ?     SLl  08:34   0:59 /opt/brave.com/brave/brave
+mysql       2108  0.8  2.5 2376288 397168 ?      Ssl  08:33   0:30 /usr/sbin/mysqld
+saksham     8294  8.0  2.2 1285717276 354748 ?   Sl   09:21   0:51 /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=4031 --enable-crash-reporter=5fd75519-2df5-499c-afbd-cfc9adf6ba3d, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=150 --time-ticks-at-unix-epoch=-1760583814039742 --launch-time-ticks=2855906927 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,6571872649653586033,5225411695680620895,2097152 --field-trial-handle=3,i,8456475825926813187,14549561696422965734,262144 --variations-seed-version
+
+Top 5 CPU-consuming processes:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+saksham     8294  8.0  2.2 1285717276 354748 ?   Sl   09:21   0:51 /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=4031 --enable-crash-reporter=5fd75519-2df5-499c-afbd-cfc9adf6ba3d, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=150 --time-ticks-at-unix-epoch=-1760583814039742 --launch-time-ticks=2855906927 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,6571872649653586033,5225411695680620895,2097152 --field-trial-handle=3,i,8456475825926813187,14549561696422965734,262144 --variations-seed-version
+saksham     3168  3.7  5.0 6082144 782776 ?      Ssl  08:33   2:10 /usr/bin/gnome-shell
+saksham     2930  2.5  1.6 26715276 251572 tty2  Sl+  08:33   1:28 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
+saksham     4068  2.3  2.0 34814020 322980 ?     Sl   08:34   1:21 /opt/brave.com/brave/brave --type=gpu-process --ozone-platform=x11 --crashpad-handler-pid=4031 --enable-crash-reporter=5fd75519-2df5-499c-afbd-cfc9adf6ba3d, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAIAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,2027112093487980288,6070362648428172221,262144 --field-trial-handle=3,i,8456475825926813187,14549561696422965734,262144 --variations-seed-version
+saksham     4029  1.7  2.5 34404220 397304 ?     SLl  08:34   0:59 /opt/brave.com/brave/brave
